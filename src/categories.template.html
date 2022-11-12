@@ -1,0 +1,8 @@
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" ng-repeat="item in $ctrl.items" ui-sref="items({categoryShortName: item.short_name})">
+      <b>{{ item.name }}</b>
+      <p class="card-text">{{ item.special_instructions }}</p>
+    </li>
+  </ul>
+</div>

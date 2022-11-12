@@ -1,0 +1,12 @@
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" ng-repeat="item in $ctrl.items">
+      <b>{{ item.name }}</b>
+      <p>{{ item.description }}</p>
+      <p ng-if="item.small_portion_name">{{ item.small_portion_name }}</p>
+      <p ng-if="item.price_small">${{ item.price_small }}</p>
+      <p ng-if="item.large_portion_name">{{ item.large_portion_name }}</p>
+      <p ng-if="item.price_large">${{ item.price_large }}</p>
+    </li>
+  </ul>
+</div>
